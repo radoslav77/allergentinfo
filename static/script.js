@@ -8,7 +8,7 @@ const allergents = {
     gluten : ['Flour', 'Oats', 'Barley'],
     nuts : ['Almonds','Almond','Walnuts','Walnut', 'Pecans','Pecan','Cashews','Cashew','Pistachios','Pistachio','Hazelnuts','Hazelnut',
             'Brazil','Brazils','Macadamia','Macadamias','Chestnut','Chestnuts','Filbert','Filberts','Hickory','Hickories','Pinenuts','Pinenut','Pine','Coconut','Coconuts'],
-    eggs : ['Egg','Eggs', 'Yolks', 'Yolk', 'Whites', 'White'],
+    eggs : ['Egg','Eggs', 'Yolks', 'Yolk', 'Whites', 'Egg white'],
     peanut: ['Peanut', 'Peanuts','Peanutbutter'],
     celery: ['Celery'],
     crustaceans : ['Prawns','Prawn','Crabs','Crab', 'Lobster','Lobsters'],
@@ -18,7 +18,7 @@ const allergents = {
     mustard : ['Mustard', 'Mustards'],
     sesame : ['Sesame', 'Sesames'],
     soy : ['Soybean','Soybeans','Soyabean','Soyabeans','Soy','Soya','Chocolate','Chocolates'],
-    sulphites : ['Cheese','Glucose','Glaze','Gel']
+    sulphites : ['Cheese','Glucose','Glaze','Gel', 'Dry']
 
 
 }
@@ -26,6 +26,8 @@ const allergents = {
 
 
 ContainAllergents()
+
+
 
 
 function ContainAllergents() {
@@ -50,9 +52,10 @@ function ContainAllergents() {
             const found = num.find(element => element.toLowerCase() == all.toLowerCase())   
             if (found == all || found == all.toLowerCase()){
                                 
-                const pEl = document.createElement('p')
-                pEl.innerText = 'Peanuts,'
-                Cont.appendChild(pEl)
+                const p = document.getElementById('1')
+                p.hidden = false
+                p.innerText = 'Peanuts,'
+                
             }
         })
 
@@ -60,9 +63,10 @@ function ContainAllergents() {
             const found = num.find(element => element.toLowerCase() == all.toLowerCase())   
             if ( found == all || found == all.toLowerCase()){
                 
-                const pEl = document.createElement('p')
-                pEl.innerText = 'Eggs,'
-                Cont.appendChild(pEl)
+                const e = document.getElementById('2')
+                e.hidden = false
+                e.innerText = 'Eggs,'
+               
                 
             }
         })
@@ -71,9 +75,10 @@ function ContainAllergents() {
             const found = num.find(element => element.toLowerCase() == all.toLowerCase())   
             if ( found == all || found == all.toLowerCase()){
                 
-                const pEl = document.createElement('p')
-                pEl.innerText = 'Gluten,'
-                Cont.appendChild(pEl)
+                const g = document.getElementById('3')
+                g.hidden = false
+                g.innerText = 'Gluten,'
+             
                 
             }
         })
@@ -82,9 +87,10 @@ function ContainAllergents() {
             const found = num.find(element => element.toLowerCase() == all.toLowerCase())   
             if ( found == all || found == all.toLowerCase()){
                 
-                const pEl = document.createElement('p')
-                pEl.innerText = 'Dairy,'
-                Cont.appendChild(pEl)
+                const d = document.getElementById('4')                
+                d.hidden = false
+                d.innerText = 'Dairy,'
+                
                 
             }
         })
@@ -93,9 +99,10 @@ function ContainAllergents() {
             const found = num.find(element => element.toLowerCase() == all.toLowerCase())   
             if ( found == all || found == all.toLowerCase()){
                 
-                const pEl = document.createElement('p')
-                pEl.innerText = 'Nuts,'
-                Cont.appendChild(pEl)
+                const n = document.getElementById('5')
+                n.hidden = false
+                n.innerText = 'Nuts,'
+               
                 
             }
         })
@@ -104,9 +111,10 @@ function ContainAllergents() {
             const found = num.find(element => element.toLowerCase() == all.toLowerCase())   
             if ( found == all || found == all.toLowerCase()){
                 
-                const pEl = document.createElement('p')
-                pEl.innerText = 'Celery,'
-                Cont.appendChild(pEl)
+                const c = document.getElementById('6')
+                c.hidden = false
+                c.innerText = 'Celery,'
+               
                 
             }
         })
@@ -115,9 +123,10 @@ function ContainAllergents() {
             const found = num.find(element => element.toLowerCase() == all.toLowerCase())   
             if ( found == all || found == all.toLowerCase()){
                 
-                const pEl = document.createElement('p')
-                pEl.innerText = 'Crustaceans,'
-                Cont.appendChild(pEl)
+                const cru = document.getElementById('7')
+                cru.hidden = false
+                cru.innerText = 'Crustaceans,'
+             
                 
             }
         })
@@ -126,9 +135,10 @@ function ContainAllergents() {
             const found = num.find(element => element.toLowerCase() == all.toLowerCase())   
             if ( found == all || found == all.toLowerCase()){
                 
-                const pEl = document.createElement('p')
-                pEl.innerText = 'Fish,'
-                Cont.appendChild(pEl)
+                const f = document.getElementById('8')
+                f.hidden = false
+                f.innerText = 'Fish,'
+               
                 
             }
         })
@@ -137,9 +147,10 @@ function ContainAllergents() {
             const found = num.find(element => element.toLowerCase() == all.toLowerCase())   
             if ( found == all || found == all.toLowerCase()){
                 
-                const pEl = document.createElement('p')
-                pEl.innerText = 'Lupin,'
-                Cont.appendChild(pEl)
+                const l = document.getElementById('9')
+                l.hidden = false
+                l.innerText = 'Lupin,'
+              
                 
             }
         })
@@ -148,9 +159,10 @@ function ContainAllergents() {
             const found = num.find(element => element.toLowerCase() == all.toLowerCase())   
             if ( found == all || found == all.toLowerCase()){
                 
-                const pEl = document.createElement('p')
-                pEl.innerText = 'Molluscs,'
-                Cont.appendChild(pEl)
+                const m = document.getElementById('10')
+                m.hidden = false
+                m.innerText = 'Molluscs,'
+                
                 
             }
         })
@@ -159,9 +171,10 @@ function ContainAllergents() {
             const found = num.find(element => element.toLowerCase() == all.toLowerCase())   
             if ( found == all || found == all.toLowerCase()){
                 
-                const pEl = document.createElement('p')
-                pEl.innerText = 'Mustard,'
-                Cont.appendChild(pEl)
+                const mus = document.getElementById('11')
+                mus.hidden = false
+                mus.innerText = 'Mustard,'
+               
                 
             }
         })
@@ -170,9 +183,10 @@ function ContainAllergents() {
             const found = num.find(element => element.toLowerCase() == all.toLowerCase())   
             if ( found == all || found == all.toLowerCase()){
                 
-                const pEl = document.createElement('p')
-                pEl.innerText = 'Sesame,'
-                Cont.appendChild(pEl)
+                const ses = document.getElementById('12')
+                ses.hidden = false
+                ses.innerText = 'Sesame,'
+               
                 
             }
         })
@@ -181,9 +195,10 @@ function ContainAllergents() {
             const found = num.find(element => element.toLowerCase() == all.toLowerCase())               
             if ( found == all || found == all.toLowerCase()){
                 
-                const pEl = document.createElement('p')
-                pEl.innerText = 'Soya,'
-                Cont.appendChild(pEl)
+                const so = document.getElementById('13')
+                so.hidden = false
+                so.innerText = 'Soya,'
+                
                 
             }
         })
@@ -192,9 +207,10 @@ function ContainAllergents() {
             const found = num.find(element => element.toLowerCase() == all.toLowerCase())   
             if ( found == all || found == all.toLowerCase()){
                 
-                const pEl = document.createElement('p')
-                pEl.innerText = 'Sulphites,'
-                Cont.appendChild(pEl)
+                const sul = document.getElementById('14')
+                sul.hidden = false
+                sul.innerText = 'Sulphites,'
+              
                 
             }
         })

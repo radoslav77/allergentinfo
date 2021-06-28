@@ -19,7 +19,7 @@ body {
 .recipe {
   background-color: #fff;
   width: 350px;
-  height: 350px;
+  height: 450px;
   padding: 10px;
   border-radius: 5px;
   border-color: #000 solid 1px;
@@ -30,7 +30,7 @@ body {
 .contain {
   background-color: #fff;
   margin-top: 2rem;
-  width: 800px;
+  width: auto;
   height: 100px;
   display: flex;
   padding: 10px;
@@ -39,7 +39,7 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-.contain p {
+.contain .info {
   font-weight: bold;
   letter-spacing: 1px;
   margin-top: 25px;
@@ -49,4 +49,18 @@ body {
 
 .contain h2 {
   letter-spacing: 1px;
+}
+
+@media screen and (max-width: 900px) {
+  .contain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+  }
+  .contain .info {
+    margin: 0;
+  }
 }
