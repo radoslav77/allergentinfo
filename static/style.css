@@ -22,7 +22,7 @@ body {
   height: 450px;
   padding: 10px;
   border-radius: 5px;
-  border-color: #000 solid 1px;
+  border: #999 solid 1px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   font-size: 18px;
 }
@@ -35,8 +35,8 @@ body {
   display: flex;
   padding: 10px;
   border-radius: 5px;
-  border-color: #000 solid 1px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  border: red solid 1px;
+  box-shadow: 0 2px 5px rgba(255, 0, 0, 0.3);
 }
 
 .contain .info {
